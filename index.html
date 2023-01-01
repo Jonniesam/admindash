@@ -10,22 +10,24 @@
 <body>
     <div class="container">
         <header>
-            <div class="logo">Dashboard</div>
+            <input type="text" name="search" id="search">
         </header>
+        <div class="logo">Dashboard</div>
         <sidebar>
-            <ul>
-                <li>Home</li>
-                <li>Profile</li>
-                <li>Message</li>
-                <li>History</li>
-                <li>Tasks</li>
-                <li>Communities</li>
-            </ul>
-            <ul>
-                <li>Settings</li>
-                <li>Support</li>
-                <li>Privacy</li>
-            </ul>
+            <div class="social">
+                <ul>
+                    <li>Home</li>
+                    <li>Profile</li>
+                    <li>Message</li>
+                    <li>History</li>
+                    <li>Tasks</li>
+                    <li></li>
+                    <li>Communities</li>
+                    <li>Settings</li>
+                    <li>Support</li>
+                    <li>Privacy</li>
+                </ul>
+            </div>
         </sidebar>
         <nav>
             <div class="navInfo">
@@ -41,37 +43,60 @@
             </div>
         </nav>
         <article>
-            <div class="main">
-                <div class="card">
-                    <p class="title">Super Cool Project</p>
-                    <p>Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin nigh erat, id facilisis felis accumsan</p>
-                  </div>
-                  <div class="card">
-                    <p class="title">Less Cool Project</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
-                  </div>
-                  <div class="card">
-                    <p class="title">Impossible App</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
-                  </div>
-                  <div class="card">
-                    <p class="title">Easy Peasy App</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
-                  </div>
-                  <div class="card">
-                    <p class="title">Ad Blocker</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
-                  </div>
-                  <div class="card">
-                    <p class="title">Money Maker</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
-                  </div>
+            
+            <div class="articleContainter">
+                <p class="articleTitle">Your Projects</p>
+                <div class="main">
+                    <div class="card">
+                        <p class="title">Super Cool Project</p>
+                        <p>Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin nigh erat, id facilisis felis accumsan</p>
+                      </div>
+                      <div class="card">
+                        <p class="title">Less Cool Project</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+                      </div>
+                      <div class="card">
+                        <p class="title">Impossible App</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+                      </div>
+                      <div class="card">
+                        <p class="title">Easy Peasy App</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+                      </div>
+                      <div class="card">
+                        <p class="title">Ad Blocker</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+                      </div>
+                      <div class="card">
+                        <p class="title">Money Maker</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+                      </div>
+                </div>
             </div>
             <div class="arctileSide">
                 <div class="announcements">
-                    <p class="announceTitle">Accouncements</p>
-
-
+                    <p class="announceTitle">Announcements</p>
+                    <div class="announcementContent">
+                        <p class="title">Site Maintenance</p>
+                        <p class="content">Vestibulum Condimentum tellus lacus, in accumsan elit maximus ac. Donec hendrerit sodales congue...</p>
+                        <p class="title">Community Share Day</p>
+                        <p class="content">Nam vel lectus tincidunt, rutrum nulla eu, ornare libero. Aliquam dictum accumsan porttitor...</p>
+                        <p class="title">Updated Privacy Policy</p>
+                        <p class="content">Phasellus efficitur nisi eget elit consectetur, eget condimentum ante auctor. Cras fringilla sagittis sem in mattis...</p>
+                    </div>
+                </div>
+                <div class="announcements">
+                    <p class="announceTitle">Trending</p>
+                    <div class="announcementContent">
+                        <p class="title">@tegan</p>
+                        <p class="content">World Peace Builder</p>
+                        <p class="title">@morgan</p>
+                        <p class="content">Super Cool Project</p>
+                        <p class="title">@kendall</p>
+                        <p class="content">Life Changing App</p>
+                        <p class="title">@alex</p>
+                        <p class="content">No Traffic Maker</p>
+                    </div>
                 </div>
             </div>
         </article>

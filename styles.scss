@@ -1,9 +1,14 @@
+body{
+    height: 95vh;
+    margin: 0;
+}
+
 .container{
     display: grid;
-    grid-template-columns: 1fr 5fr;
+    grid-template-columns: 1fr 6fr;
     grid-template-rows: 1fr 1fr 4fr;
     grid-template-areas: 
-    'header header'
+    'logo header'
     'sidebar nav'
     'sidebar article'
     ;
@@ -12,38 +17,109 @@
 header{
     grid-area: header;
     display: grid;
-    grid-template-columns: 1fr 4fr;
     justify-items: center;
     align-content: center;
+
+    input{
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        width: 50%;
+    }
+}
+
+input::before{
+    content: ":mag: ";
+}
+
+.logo{
+    display: flex;
+    grid-area: logo;
+    background-color: #438ee5;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
 
 }
 
 sidebar{
     grid-area: sidebar;
-    background-color: dodgerblue;
+    background-color: #438ee5;
     color: white;
     display: grid;
     justify-items: center;
+    
+    
 
     ul{
         font-weight: bold;
         display: grid;
         gap: 1rem;
+
+        &:nth-child(6){
+            margin-top: 10px;
+        }
     }
+
+    
+
 }
 
 nav{
     grid-area: nav;
-    display: grid;
-    grid-template-columns: 1fr 3fr;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 5%;
+    align-items: center;
+    box-shadow: 1px, 1px, black;
     ul{
         display: flex;
         gap: 20px;
+
+        :hover{
+            cursor: pointer;
+        }
+    }
+
+    li{
+        background-color: #438ee5;
+        color: white;
+        border-radius: 10px;
+        width: 4rem;
+        height: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .navList{
+        padding-right: 5%;
+
+    }
+
+    .navInfo{
+        :nth-child(2){
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-top: 0;
+        }
     }
 }
 
+
 ul{
     list-style: none;
+}
+
+.articleTitle{
+    padding-left: 2%;
+}
+
+.articleTitle,.announceTitle{
+    font-weight: bold;
+    font-size: 1.2rem;
 }
 
 article{
@@ -52,12 +128,18 @@ article{
     grid-template-columns: 4fr 1fr;
     background-color: rgb(235, 234, 234);
     
+    
     .main{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     color:black;
-    gap: 15px;
-    padding:15px;}
+    gap: 40px;
+    padding:15px;
+    :hover{
+        cursor: pointer;
+    }
+    
+}
 
     .card{
         height:200px;
@@ -65,7 +147,41 @@ article{
         padding: 5px 15px;
         box-shadow: 2px 2px lightgray;
         border-radius: 5px;
-        border-left: 5px solid gold;
+        border-left: 10px solid gold;
+
+        
+        :nth-child(2){
+            margin-top: 2px;
+        }
+
+        
+    }
+
+    .title{
+        font-weight: bold;
+        margin-bottom: 0;
+    }
+
+    
+}
+
+.announcementContent{
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px 20px;
+
+    .title{
+        margin-bottom: 0;
+        font-weight: bold;
+    }
+
+    .content{
+        margin-top: 0;
+        font-size: 12px;
 
     }
+}
+
+.arctileSide{
+    padding: 20px;
 }
